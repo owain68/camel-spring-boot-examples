@@ -40,7 +40,7 @@ public class RestMockTests {
 
     camelContext.start();
     MockEndpoint mockOut = camelContext.getEndpoint("mock:routeB", MockEndpoint.class);
-    mockOut.expectedMessageCount(1);
+    mockOut.expectedMessageCount(0);
     ResponseEntity<String> response = restTemplate.getForEntity("/dummy", String.class);
     mockOut.assertIsSatisfied();
     assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
