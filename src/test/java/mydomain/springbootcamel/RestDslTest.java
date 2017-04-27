@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(CamelSpringBootRunner.class)
-@SpringBootTest(classes = SpringBootCamelExamples.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = mydomain.springbootcamel.SpringBootCamelExamples.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 
 public class RestDslTest {
 

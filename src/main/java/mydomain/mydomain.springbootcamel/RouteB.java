@@ -2,11 +2,7 @@ package mydomain.springbootcamel;
 
 import org.apache.camel.*;
 import org.apache.camel.builder.*;
-import org.apache.camel.component.geocoder.*;
-import org.apache.camel.component.servlet.*;
-import org.apache.camel.model.dataformat.*;
-import org.springframework.boot.web.servlet.*;
-import org.springframework.context.annotation.*;
+
 import org.springframework.stereotype.Component;
 
 @Component

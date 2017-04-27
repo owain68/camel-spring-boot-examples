@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RouteA extends RouteBuilder{
+public class RestRoute extends RouteBuilder{
 
   @Bean
   ServletRegistrationBean camelServlet() {
@@ -28,6 +28,7 @@ public class RouteA extends RouteBuilder{
 
     rest("/")
             .get("{body}")
+            .id("getRoute")
             .produces("application/json")
             .to("direct:RouteB");
   }
